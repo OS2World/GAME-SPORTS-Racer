@@ -1,19 +1,50 @@
-         OS/2 Upload Information Template for ftp-os2.nmsu.edu
+Name: 		RACER
+Descripcion: 	Car Game
+Date: 		2023-05-17
+Version:	1.4
+----------------------------  
 
-Archive Name:  racer13.zip
-Program Description: (keep it under 60 characters)
+DESCRIPTION
+-----------
+This is a prototype for an OS/2 game idea of mine. Antonino Iannella got the idea from a program in a magazine printed about ten years ago. The original program was written in BASIC (from Microsoft, uugh!) for the Tandy TRS-80 and he always liked it's concept.   
 
-A text-based racing car game
+The aim is to keep your car away from the white lines; the roadside.   
 
-Operating System Versions:   OS/2 3.0 (Warp) and above
-Program Source:       none
-Replaces:             /pub/os2/games/racer.zip
+Racer is simply a text-based car on a road, so it moves quite fast. The text symbol in the middle is your 'car'. (Sorry about it being a long, white streak.) Press the left or right arrow keys to make it move left or right. <CTRL><S> pauses it. Press 'q' at any time to stop. Crashing the car into the sides also ends the ride.   
 
-Your name:            Antonino Iannella
-Your email address:   9308390r@lux.levels.unisa.edu.au
+In this version, after a crash the user is prompted to drive again by entering 'Y' (or pressing Enter). Press 'N' to quit. The distance travelled after each drive is displayed. Many people have requested that I slow the game down (you know the type...those who own a Pentium 2000MHz with gazillion MB of RAM... )   
 
-Proposed directory for placement:  /pub/os2/games/
-
+REQUIREMENTS
+------------
+This software requires libc and libcx.
+It is available on ArcaOS or/and can be installed with "yum install libc libcx" if you have ANPM installed. 
+ 
+HISTORY
+----------
+- 1.4 - 2023-05-17
+Changed version to compile on gcc and to run on ArcaOS 5.0.7.
+
+- 1.3
+Version by Antonino Iannella.
+
+LICENSE
+-------
+GNU GPL V3
 
 
-
+COMPILE INSTRUCTIONS
+--------------------
+This version was modified to compile on ArcaOS with GCC 9 compiler.
+
+The requeriments for compile this version are:
+- yum install git gcc make libc-devel binutils watcom-wrc watcom-wlink-hll
+
+1) Remember to have correct header files your path. For GCC the correct ones are the included on the "libc-devel", not the ones from the OS/2 Toolkit. Check your config.sys for "SET INCLUDE=C:\usr\include"
+
+2) Run "make" to compile or "make 2>&1 |tee make.out" to compile and get the log file. A compile.cmd file was provided to run the compile process.
+
+
+AUTHORS
+-------
+- Martin Iturbide (2023)
+- Antonino Iannella.

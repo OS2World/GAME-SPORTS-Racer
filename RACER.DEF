@@ -1,2 +1,7 @@
-NAME "Racer v1.3 for OS/2" WINDOWCOMPAT
-
+;-------------------------------------
+; RACER.DEF module definition file
+;-------------------------------------
+
+NAME           RACER  WINDOWCOMPAT
+
+DESCRIPTION     '@#OS2World:1.4#@##1## 17 May 2023 20:00:00     ARCAOS-507::::::v1.4@@Racer game'

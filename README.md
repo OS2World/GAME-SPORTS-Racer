@@ -5,9 +5,10 @@ A text-based racing car game.
 * GNU GPL V3
 
 ## COMPILE TOOLS
-* 
+* yum install git gcc make libc-devel binutils watcom-wrc watcom-wlink-hll
  
 ## AUTHORS
+* Martin Iturbide
 * Antonino Iannella
 
 ## LINKS

@@ -1,12 +1,12 @@
 /*
-   Title  : Racer, Racing car game version 1.3
-   Author : Antonino Iannella, September 25th, 1996
+   Title  : Racer, Racing car game version 1.4
+   Author : Antonino Iannella, Martin Iturbide
    Description:
           A simple command-line car being driven down a
           fast, winding track.   The white lines are the
           boundaries in which to keep the 'Î' car.
 
-          It is compilable under GCC (with no 
+          It is compilable under GCC (with no
           optimisations) using
 
           gcc -Zomf -Zsys -o racer.exe racer.c racer.def
@@ -38,7 +38,7 @@ Revision:
 #define  TRACK_WIDTH       20
 
 /* Revised 25-9-96 */
-#define  LINE_DISTANCE     0.01 
+#define  LINE_DISTANCE     0.01
 #define  SLOW_THE_PC_DOWN  10                     /* Milliseconds per delay */
 
 int cpos,                       /* Car position from left side of the screen */
@@ -152,7 +152,7 @@ void track(int kkey)
 
 /* ------------------------ GRUNDIG - Made for you! ------------------------ */
 
-main()
+int main(void)
 {
   char let;
 
@@ -160,7 +160,7 @@ main()
   cpos=lpost+TRACK_WIDTH/2;                       /* Initialise car position */
   Travelled=0;
 
-  printf("\nRacer version 1.3 by Antonino Iannella, September 1996.\n");
+  printf("\nRacer version 1.4.\n");
 
   while(1)
   {
@@ -172,4 +172,4 @@ main()
     else
       track(let);                                        /* Print next track */
   }
-}
+}
