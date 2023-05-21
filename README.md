@@ -1,6 +1,8 @@
 # GAME-SPORTS-Racer
 A text-based racing car game.
 
+![Racer ScreenShot](/wiki/Racer_001.png)
+
 ## LICENSE
 * GNU GPL V3
 
